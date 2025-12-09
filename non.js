@@ -1,4 +1,4 @@
-  var potato = 0;
+  var money = 0;
   var mult = 1;
   var pestige = 1;
   function setup() {
@@ -17,17 +17,17 @@ function draw() {
   text("Potato Count:", 0, 400);
   text("farms (cost: 200 potato) press m to buy", 0, 300);
   text("plants per farm (cost: 190 farms) press p to buy reg:200  farms", 0, 200);
-  text(potato, 0, 420);
+  text(money, 0, 420);
   text(mult, 0, 320);
   text(pestige, 0, 220);
   
   if (mouseIsPressed){ 
-    potato = potato + (mult * pestige);
+    money = money + mult * pestige;
   } 
 
   if (money >= 200 && keyIsPressed && key=="m"){
 mult = mult + 1;
-potato = potato - 200;
+money = money - 200;
   }
    if (mult >= 200 && keyIsPressed && key == "p") {
      pestige = pestige + 1;
