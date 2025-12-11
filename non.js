@@ -103,6 +103,24 @@ if (veggies>= 5000000000 && pestige >= 4999999990) {
   pestige = pestige - 4999999990;
 }
 
+//a key auto
+if (keyIsPressed && key == "a" && money>=10000000000 ) {
+
+  mult = mult +5000000000;
+  money = money - 5000000000;
+  
+}
+if (keyIsPressed && key == "a" && mult >= 10000000000) {
+
+  pestige = pestige + 4999999990;
+  mult = mult - 4999999990;
+}
+
+if (keyIsPressed && key == "a" && mult >= 10000000000) {
+  pestige = pestige + 4999999990;
+  mult = mult - 4999999990;
+}
+
 
 
 
