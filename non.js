@@ -121,6 +121,11 @@ if (keyIsPressed && key == "a" && mult >= 10000000000) {
   mult = mult - 4999999990;
 }
 
+if (keyIsPressed && key == "a" && pestige >= 10000000000) {
+  veggies = veggies + 4999999990;
+  pestige = pestige - 4999999990;
+}
+
 
 
 
