@@ -47,6 +47,7 @@ function draw() {
   if (money >= 200 && keyIsPressed && key == "m") {
     mult = mult + 1;
     money = money - 200;
+  
   }
   if (mult >= 200 && keyIsPressed && key == "p") {
     pestige = pestige + 1;
@@ -85,45 +86,28 @@ function draw() {
           pestige = pestige - 1999990;
         }
         //auto
-if (money>= 5000000000) {
+if (money>= 50000000000000000000) {
   money = money + (mult*(pestige*veggies));
 }
-if (mult>= 5000000000 && money>=5000000000) {
-  mult = mult +5000000000;
-  money = money - 5000000000;
-}
 
-if (pestige >= 5000000000 && mult >= 4999999990) {
-  pestige = pestige + 5000000000;
-  mult = mult - 4999999990;
-}
 
-if (veggies>= 5000000000 && pestige >= 4999999990) {
-  veggies = veggies +5000000000;
-  pestige = pestige - 4999999990;
-}
+//extreme buys
+if (keyIsPressed && key == "a" && money>=100000000000 ) {
 
-//a key auto
-if (keyIsPressed && key == "a" && money>=10000000000 ) {
-
-  mult = mult +5000000000;
-  money = money - 5000000000;
+  mult = mult +50000000000;
+  money = money - 50000000000;
   
 }
-if (keyIsPressed && key == "a" && mult >= 10000000000) {
+if (keyIsPressed && key == "s" && mult >= 100000000000) {
 
-  pestige = pestige + 4999999990;
-  mult = mult - 4999999990;
+  pestige = pestige + 49999999990;
+  mult = mult - 49999999990;
 }
 
-if (keyIsPressed && key == "a" && mult >= 10000000000) {
-  pestige = pestige + 4999999990;
-  mult = mult - 4999999990;
-}
 
-if (keyIsPressed && key == "a" && pestige >= 10000000000) {
-  veggies = veggies + 4999999990;
-  pestige = pestige - 4999999990;
+if (keyIsPressed && key == "d44" && pestige >= 100000000000) {
+  veggies = veggies + 49999999990;
+  pestige = pestige - 49999999990;
 }
 
 
